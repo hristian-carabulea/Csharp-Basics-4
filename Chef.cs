@@ -19,7 +19,7 @@ namespace Csharp_Basics_4
         }
 
         // public void MakeSpecialDish() 
-        public virtual void MakeSpecialDish() // using virtual allows this method to be overwrittein in any sub-class of Chef.
+        public virtual void MakeSpecialDish() // using virtual allows this method to be overridden in any sub-class of Chef.
         {
             Console.WriteLine("The chef makes BBQ Ribs.");
         }
