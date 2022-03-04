@@ -18,6 +18,23 @@ namespace Csharp_Basics_4
 
             // UsefullTools tools = new UsefullTools(); cannot create a new instance of UsefullTools because it is a static class.
             UsefullTools.SayHello(name + "."); // SayHello is a static method.
+
+            Chef chef = new Chef();
+            Console.WriteLine("Chef, super-class stuff");
+            chef.MakeChicken();
+            // chef.MakePiza(); // declared in sub-class. Cannot use method.
+            Console.WriteLine("Chef, MakeSpecialDish, declared virtual in super-class");
+            chef.MakeSpecialDish(); // in super-class
+
+            // Inheritance: one class inherits all the functionality of another class, e.g. Cheff is a super-class and ItalianChef is a sub-class
+
+            Console.WriteLine("ItalianChef, sub-class stuff");
+            ItalianChef italianChef = new ItalianChef();
+            italianChef.MakeChicken();
+            italianChef.MakePizza();
+            Console.WriteLine("ItalianChef, MakeSpecialDish overwritten in sub-class ItalianChef");
+            italianChef.MakeSpecialDish();
+
             Console.ReadLine();
         }
     }
