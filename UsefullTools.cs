@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Csharp_Basics_4
 {
-    class UsefullTools
+    static class UsefullTools // static class, cannot create a new instance of it.
     {
         public static void SayHello(string name)
         {
